@@ -5,9 +5,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Spotify</title>
 		<link rel="stylesheet" href="style.css" />
+		<script>
+			// ajout d'une classe .sticky au header lors du scroll
+			document.addEventListener("scroll", function (e) {
+				if (window.scrollY > 0) {
+					document.getElementById("site-header").classList.add("sticky");
+				} else {
+					document.getElementById("site-header").classList.remove("sticky");
+				}
+			});
+
+			document.addEventListener("DOMContentLoaded", function () {
+				document
+					.getElementById("menu-button")
+					.addEventListener("click", function (e) {
+						document.getElementById("site-nav").classList.toggle("active");
+					});
+			});
+		</script>
 	</head>
 	<body>
-		<header>
+		<header id="site-header">
 			<div class="container">
 				<a href="#">
 					<svg
@@ -66,7 +84,8 @@
                    v3.025h2.37c1.181,0,1.891-0.579,1.891-1.514C551.688,70.376,550.978,69.849,549.797,69.849z" />
 					</svg>
 				</a>
-				<nav>
+				<button id="menu-button" class="menu-button">menu</button>
+				<nav id="site-nav">
 					<ul class="clearfix">
 						<li>
 							<a href="#">Premium</a>
@@ -93,7 +112,7 @@
 			<section class="section1">
 				<div class="container">
 					<div>
-						<h1>Obtenez 3 mois pour 0,99 €</h1>
+						<h1>Obtenez 3 mois pour 0,99&nbsp;€</h1>
 						<h2>Seulement 9,99 € /par mois ensuite. Annulez à tout moment.</h2>
 						<a class="ctaButton ctaButton-blue" href="#"
 							>Démarrer Spotify Premium</a

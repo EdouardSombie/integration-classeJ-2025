@@ -1,0 +1,11 @@
+@use "fonts";
+
+:root {
+	--red: "...";
+	--grey: "...";
+	--blue: "...";
+}
+
+body {
+	font-family: fonts.$font1;
+}
