@@ -4,12 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Spotify</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style_float.css" />
 	</head>
 	<body>
 		<header>
-			<div class="container">
-				<a href="#">
+			<div class="container clearfix">
+				<a class="vertically-centered" href="#">
 					<svg
 						x="0px"
 						y="0px"
@@ -91,13 +91,11 @@
 
 		<main>
 			<section class="section1">
-				<div class="container">
-					<div>
+				<div class="container clearfix">
+					<div class="vertically-centered">
 						<h1>Obtenez 3 mois pour 0,99 €</h1>
 						<h2>Seulement 9,99 € /par mois ensuite. Annulez à tout moment.</h2>
-						<a class="ctaButton ctaButton-blue" href="#"
-							>Démarrer Spotify Premium</a
-						>
+						<a href="#">Démarrer Spotify Premium</a>
 					</div>
 					<footer>
 						<small
@@ -109,9 +107,9 @@
 				</div>
 			</section>
 			<section class="section2">
-				<div class="container">
+				<div class="container clearfix">
 					<h1>Pourquoi passer à Spotify premium ?</h1>
-					<ul>
+					<ul class="clearfix">
 						<li>
 							<article>
 								<img src="images/benefit1.png" alt="benefit1" />
@@ -144,26 +142,25 @@
 				</div>
 			</section>
 			<section class="section3">
-				<div class="container">
+				<div class="container clearfix">
 					<h1>Écoutez gratuitement ou abonnez-vous à Spotify Premium.</h1>
-					<ul>
+					<ul class="clearfix">
 						<li>
-							<article class="card">
+							<article>
 								<h2>Spotify Free</h2>
-								<h3>0,00 € <small>/ mois</small></h3>
+								<h3>0,00 € / mois</h3>
 								<ul>
 									<li>Lecture aléatoire</li>
-									<li class="disabled">Sans interruptions</li>
-									<li class="disabled">Zappez les titres sans limite</li>
-									<li class="disabled">Écouter hors connexion</li>
-									<li class="disabled">Écoutez les titres de votre choix</li>
-									<li class="disabled">Son de qualité supérieure</li>
+									<li>Sans interruptions</li>
+									<li>Zappez les titres sans limite</li>
+									<li>Écouter hors connexion</li>
+									<li>Écoutez les titres de votre choix</li>
+									<li>Son de qualité supérieure</li>
 								</ul>
-								<a href="#" class="ctaButton ctaButton-white">Démarrer</a>
 							</article>
 						</li>
 						<li>
-							<article class="card">
+							<article>
 								<h2>Spotify Premium</h2>
 								<h3>3 mois pour 0,99 €</h3>
 								<ul>
@@ -174,9 +171,6 @@
 									<li>Écoutez les titres de votre choix</li>
 									<li>Son de qualité supérieure</li>
 								</ul>
-								<a href="#" class="ctaButton ctaButton-green"
-									>Démarrer Spotify Premium</a
-								>
 							</article>
 						</li>
 					</ul>
@@ -194,7 +188,7 @@
 		<footer>
 			<div class="container">
 				<nav>
-					<ul>
+					<ul class="clearfix">
 						<li>
 							<a href="#">Légal</a>
 						</li>
@@ -206,7 +200,7 @@
 						</li>
 					</ul>
 				</nav>
-				<small>© 2025 Spotify AB</small>
+				<small class="vertically-centered">© 2025 Spotify AB</small>
 			</div>
 		</footer>
 	</body>
