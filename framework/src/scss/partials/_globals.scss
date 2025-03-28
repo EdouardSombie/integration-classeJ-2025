@@ -1,11 +1,16 @@
 @use "fonts";
+@use "variables" as v;
+@use "sass:color";
 
-:root {
-	--red: "...";
-	--grey: "...";
-	--blue: "...";
-}
+@layer base {
+	:root {
+		@each $name, $value in v.$colors {
+			--#{$name}: #{$value};
+			--#{$name}-hover: #{color.scale($value, $lightness: 15%)};
+		}
+	}
 
-body {
-	font-family: fonts.$font1;
+	body {
+		font-family: fonts.$font1;
+	}
 }

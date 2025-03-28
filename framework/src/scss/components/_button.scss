@@ -1,0 +1,39 @@
+@use "../partials/mixins" as m;
+@use "../partials/variables" as v;
+@use "../partials/functions" as f;
+
+@layer components {
+	.button {
+		@include m.resetA;
+		@include m.resetButton;
+		display: inline-block;
+		padding: f.rem(10) f.rem(16);
+		border-radius: f.rem(6);
+		transition: background-color 0.3s;
+		color: var(--white);
+		background-color: var(--black);
+		font-weight: 600;
+		line-height: f.rem(18);
+		&:hover {
+			background-color: var(--black-hover);
+		}
+		// modifiers de couleur
+		@each $modifier, $color in v.$colorModifiers {
+			&-#{$modifier} {
+				background-color: var(--#{$color});
+				&:hover {
+					background-color: var(--#{$color}-hover);
+				}
+			}
+		}
+		// modifiers de taille
+		&-lg {
+			padding: f.rem(16) f.rem(24);
+		}
+		&-sm {
+			padding: f.rem(8) f.rem(12);
+			font-size: f.rem(14);
+			line-height: f.rem(16);
+		}
+	}
+}

@@ -1,0 +1,12 @@
+@use "variables" as v;
+
+@layer utilities {
+	@for $i from 0 through 6 {
+		.m-#{$i} {
+			margin: $i * v.$spacing;
+		}
+		.p-#{$i} {
+			padding: $i * v.$spacing;
+		}
+	}
+}
