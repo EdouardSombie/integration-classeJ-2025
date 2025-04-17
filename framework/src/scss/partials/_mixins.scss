@@ -11,3 +11,12 @@
 	text-decoration: none;
 	color: inherit;
 }
+
+@mixin flexbox($display: flex, $direction: row, $wrap: nowrap, $justify: flex-start, $align: stretch, $gap: 0) {
+	display: $display;
+	flex-direction: $direction;
+	flex-wrap: $wrap;
+	justify-content: $justify;
+	align-items: $align;
+	gap: $gap;
+}

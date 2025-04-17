@@ -173,9 +173,15 @@
     --white-hover: white;
     --black: #000;
     --black-hover: rgb(38.25, 38.25, 38.25);
+    --darkGrey: #333333;
+    --darkGrey-hover: rgb(81.6, 81.6, 81.6);
   }
   body {
     font-family: "Inter", sans-serif;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 @layer utilities {
@@ -185,11 +191,59 @@
   .p-0 {
     padding: 0rem;
   }
+  .mt-0 {
+    margin-top: 0rem;
+  }
+  .pt-0 {
+    padding-top: 0rem;
+  }
+  .mb-0 {
+    margin-bottom: 0rem;
+  }
+  .pb-0 {
+    padding-bottom: 0rem;
+  }
+  .mr-0 {
+    margin-right: 0rem;
+  }
+  .pr-0 {
+    padding-right: 0rem;
+  }
+  .ml-0 {
+    margin-left: 0rem;
+  }
+  .pl-0 {
+    padding-left: 0rem;
+  }
   .m-1 {
     margin: 0.25rem;
   }
   .p-1 {
     padding: 0.25rem;
+  }
+  .mt-1 {
+    margin-top: 0.25rem;
+  }
+  .pt-1 {
+    padding-top: 0.25rem;
+  }
+  .mb-1 {
+    margin-bottom: 0.25rem;
+  }
+  .pb-1 {
+    padding-bottom: 0.25rem;
+  }
+  .mr-1 {
+    margin-right: 0.25rem;
+  }
+  .pr-1 {
+    padding-right: 0.25rem;
+  }
+  .ml-1 {
+    margin-left: 0.25rem;
+  }
+  .pl-1 {
+    padding-left: 0.25rem;
   }
   .m-2 {
     margin: 0.5rem;
@@ -197,11 +251,59 @@
   .p-2 {
     padding: 0.5rem;
   }
+  .mt-2 {
+    margin-top: 0.5rem;
+  }
+  .pt-2 {
+    padding-top: 0.5rem;
+  }
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  .pb-2 {
+    padding-bottom: 0.5rem;
+  }
+  .mr-2 {
+    margin-right: 0.5rem;
+  }
+  .pr-2 {
+    padding-right: 0.5rem;
+  }
+  .ml-2 {
+    margin-left: 0.5rem;
+  }
+  .pl-2 {
+    padding-left: 0.5rem;
+  }
   .m-3 {
     margin: 0.75rem;
   }
   .p-3 {
     padding: 0.75rem;
+  }
+  .mt-3 {
+    margin-top: 0.75rem;
+  }
+  .pt-3 {
+    padding-top: 0.75rem;
+  }
+  .mb-3 {
+    margin-bottom: 0.75rem;
+  }
+  .pb-3 {
+    padding-bottom: 0.75rem;
+  }
+  .mr-3 {
+    margin-right: 0.75rem;
+  }
+  .pr-3 {
+    padding-right: 0.75rem;
+  }
+  .ml-3 {
+    margin-left: 0.75rem;
+  }
+  .pl-3 {
+    padding-left: 0.75rem;
   }
   .m-4 {
     margin: 1rem;
@@ -209,17 +311,143 @@
   .p-4 {
     padding: 1rem;
   }
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  .pt-4 {
+    padding-top: 1rem;
+  }
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  .pb-4 {
+    padding-bottom: 1rem;
+  }
+  .mr-4 {
+    margin-right: 1rem;
+  }
+  .pr-4 {
+    padding-right: 1rem;
+  }
+  .ml-4 {
+    margin-left: 1rem;
+  }
+  .pl-4 {
+    padding-left: 1rem;
+  }
   .m-5 {
     margin: 1.25rem;
   }
   .p-5 {
     padding: 1.25rem;
   }
+  .mt-5 {
+    margin-top: 1.25rem;
+  }
+  .pt-5 {
+    padding-top: 1.25rem;
+  }
+  .mb-5 {
+    margin-bottom: 1.25rem;
+  }
+  .pb-5 {
+    padding-bottom: 1.25rem;
+  }
+  .mr-5 {
+    margin-right: 1.25rem;
+  }
+  .pr-5 {
+    padding-right: 1.25rem;
+  }
+  .ml-5 {
+    margin-left: 1.25rem;
+  }
+  .pl-5 {
+    padding-left: 1.25rem;
+  }
   .m-6 {
     margin: 1.5rem;
   }
   .p-6 {
     padding: 1.5rem;
+  }
+  .mt-6 {
+    margin-top: 1.5rem;
+  }
+  .pt-6 {
+    padding-top: 1.5rem;
+  }
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  .pb-6 {
+    padding-bottom: 1.5rem;
+  }
+  .mr-6 {
+    margin-right: 1.5rem;
+  }
+  .pr-6 {
+    padding-right: 1.5rem;
+  }
+  .ml-6 {
+    margin-left: 1.5rem;
+  }
+  .pl-6 {
+    padding-left: 1.5rem;
+  }
+  .bg-red {
+    background-color: var(--red);
+  }
+  .border-red {
+    border-color: var(--red);
+  }
+  .bg-grey {
+    background-color: var(--grey);
+  }
+  .border-grey {
+    border-color: var(--grey);
+  }
+  .bg-blue {
+    background-color: var(--blue);
+  }
+  .border-blue {
+    border-color: var(--blue);
+  }
+  .bg-white {
+    background-color: var(--white);
+  }
+  .border-white {
+    border-color: var(--white);
+  }
+  .bg-black {
+    background-color: var(--black);
+  }
+  .border-black {
+    border-color: var(--black);
+  }
+  .bg-darkGrey {
+    background-color: var(--darkGrey);
+  }
+  .border-darkGrey {
+    border-color: var(--darkGrey);
+  }
+  .bg-primary {
+    background-color: var(--blue);
+  }
+  .border-primary {
+    border-color: var(--blue);
+  }
+  .bg-secondary {
+    background-color: var(--grey);
+  }
+  .border-secondary {
+    border-color: var(--grey);
+  }
+  .bg-danger {
+    background-color: var(--red);
+  }
+  .border-danger {
+    border-color: var(--red);
   }
 }
 @layer components {
@@ -300,6 +528,110 @@
     padding: 0.5rem 0.75rem;
     font-size: 0.875rem;
     line-height: 1rem;
+  }
+}
+@layer components {
+  .banner {
+    aspect-ratio: 100/42;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .banner-text {
+    display: flex;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    color: var(--white);
+    text-align: center;
+    position: relative;
+  }
+  .banner-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: color-mix(in srgb, var(--black) 70%, transparent);
+  }
+  .banner-text > * {
+    margin: auto;
+    max-width: 75%;
+    z-index: 1;
+  }
+}
+@layer components {
+  .card {
+    --bg-color: var(--white);
+    --text-color: var(--black);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    width: 20rem;
+    padding: 1.25rem;
+    border-radius: 0.375rem;
+    overflow: hidden;
+    border: solid thin color-mix(in srgb, var(--black) 10%, transparent);
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.625rem;
+    vertical-align: top;
+  }
+  .card > * {
+    margin: 0;
+  }
+  .card img {
+    margin: -1.25rem -1.25rem 0 -1.25rem;
+    max-width: inherit;
+    margin-bottom: 0.625rem;
+    height: 12.5rem;
+    width: calc(100% + 2.5rem);
+    object-fit: cover;
+    object-position: center;
+  }
+  .card h2 {
+    font-size: 1.25rem;
+    line-height: 1;
+    font-weight: 600;
+  }
+  .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .card-full {
+    position: relative;
+    padding-top: 13.75rem;
+  }
+  .card-full > * {
+    z-index: 1;
+  }
+  .card-full img {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .card-full::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, var(--bg-color));
+    z-index: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    .card {
+      --bg-color: var(--darkGrey);
+      --text-color: var(--white);
+    }
   }
 }
 
