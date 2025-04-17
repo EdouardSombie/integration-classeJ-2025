@@ -8,7 +8,7 @@ $suffixes: (
 );
 
 @layer utilities {
-	@for $i from 0 through 6 {
+	@for $i from 0 through 12 {
 		.m-#{$i} {
 			margin: $i * v.$spacing;
 		}

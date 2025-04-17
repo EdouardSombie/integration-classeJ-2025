@@ -1,0 +1,29 @@
+@use "../partials/mixins" as m;
+@use "../partials/functions" as f;
+
+@layer components {
+	.navbar {
+		background-color: color-mix(in srgb, var(--black) 20%, transparent);
+		padding: f.rem(10) 0;
+		a {
+			@include m.resetA;
+		}
+
+		ul {
+			@include m.resetList;
+			@include m.flexbox($align: center, $gap: f.rem(18));
+			flex-grow: 1;
+		}
+
+		form {
+			display: none;
+			@media (width > f.screen("lg")) {
+				@include m.flexbox($gap: f.rem(10));
+			}
+		}
+
+		.container {
+			@include m.flexbox($align: center, $gap: f.rem(60));
+		}
+	}
+}
