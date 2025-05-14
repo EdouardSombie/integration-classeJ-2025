@@ -1,0 +1,30 @@
+@use "fonts";
+@use "variables" as v;
+@use "functions" as f;
+@use "sass:color";
+
+@layer base {
+	:root {
+		@each $name, $value in v.$colors {
+			--#{$name}: #{$value};
+			--#{$name}-hover: #{color.scale($value, $lightness: 15%)};
+		}
+	}
+
+	body {
+		font-family: fonts.$font1;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	input {
+		border-radius: f.rem(6);
+		padding: f.rem(10);
+		min-width: f.rem(220);
+		// A changer quand on aura le nuancier neutral
+		border: solid thin var(--grey);
+	}
+}

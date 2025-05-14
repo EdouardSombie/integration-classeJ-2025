@@ -1,0 +1,44 @@
+@use "variables" as v;
+
+$suffixes: (
+	t: top,
+	b: bottom,
+	r: right,
+	l: left,
+);
+
+@layer utilities {
+	@for $i from 0 through 12 {
+		.m-#{$i} {
+			margin: $i * v.$spacing;
+		}
+		.p-#{$i} {
+			padding: $i * v.$spacing;
+		}
+		@each $suffix, $value in $suffixes {
+			.m#{$suffix}-#{$i} {
+				margin-#{$value}: $i * v.$spacing;
+			}
+			.p#{$suffix}-#{$i} {
+				padding-#{$value}: $i * v.$spacing;
+			}
+		}
+	}
+
+	@each $name, $value in v.$colors {
+		.bg-#{$name} {
+			background-color: var(--#{$name});
+		}
+		.border-#{$name} {
+			border-color: var(--#{$name});
+		}
+	}
+	@each $name, $value in v.$colorModifiers {
+		.bg-#{$name} {
+			background-color: var(--#{$value});
+		}
+		.border-#{$name} {
+			border-color: var(--#{$value});
+		}
+	}
+}

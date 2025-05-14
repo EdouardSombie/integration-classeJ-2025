@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Design guide</title>
+		<link rel="stylesheet" href="./src/scss/main.scss" />
+		<script type="module" src="./src/js/main.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Design guide</h1>
+			<section class="mb-6">
+				<h1>.button</h1>
+				<p>
+					<button class="button button-primary button-lg">Button</button>
+					<button class="button button-primary">Button</button>
+					<button class="button button-primary button-sm">Button</button>
+				</p>
+				<p>
+					<button class="button button-secondary button-lg">Button</button>
+					<button class="button button-secondary">Button</button>
+					<button class="button button-secondary button-sm">Button</button>
+				</p>
+				<p>
+					<a href="#" class="button button-danger button-lg">Button</a>
+					<a href="#" class="button button-danger">Button</a>
+					<a href="#" class="button button-danger button-sm">Button</a>
+				</p>
+			</section>
+			<section class="mb-6">
+				<h1>.banner</h1>
+				<div class="banner mb-6" style="background-image: url('/images/fond.jpg')"></div>
+				<div class="banner banner-text" style="background-image: url('/images/fond.jpg')">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper nulla a ipsum imperdiet, ac porttitor dui sagittis.</p>
+				</div>
+			</section>
+			<section class="mb-6">
+				<h1>.card</h1>
+				<article class="card">
+					<img src="/images/fond.jpg" alt="Totoro" />
+					<h2>Card title</h2>
+					<p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="button button-primary">Button</a>
+				</article>
+
+				<article class="card card-full">
+					<img src="/images/totoro.jpg" alt="Totoro" />
+					<h2>Card title</h2>
+					<p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="button button-primary">Button</a>
+				</article>
+			</section>
+		</div>
+		<section class="mb-12">
+			<div class="container">
+				<h1>.navbar</h1>
+			</div>
+			<nav class="navbar">
+				<div class="container">
+					<a href="#" class="navbar_title">Navbar</a>
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Features</a>
+						</li>
+						<li>
+							<a href="#">Pricing</a>
+						</li>
+						<li>
+							<a href="#">Disabled</a>
+						</li>
+					</ul>
+					<form>
+						<input type="text" />
+						<button class="button button-outline">Search</button>
+					</form>
+					<button class="toggle">
+						<object>
+							<img src="https://upload.wikimedia.org/wikipedia/fr/3/3c/Mozilla_Foundation_Logo.svg" />
+						</object>
+					</button>
+				</div>
+			</nav>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+@mixin resetButton {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	font-size: inherit;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+@mixin resetList {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+@mixin resetA {
+	text-decoration: none;
+	color: inherit;
+}
+
+@mixin flexbox($display: flex, $direction: row, $wrap: nowrap, $justify: flex-start, $align: stretch, $gap: 0) {
+	display: $display;
+	flex-direction: $direction;
+	flex-wrap: $wrap;
+	justify-content: $justify;
+	align-items: $align;
+	gap: $gap;
+}

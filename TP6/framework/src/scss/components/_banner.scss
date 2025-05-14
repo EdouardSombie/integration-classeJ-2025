@@ -1,0 +1,33 @@
+@use "../partials/functions" as f;
+
+@layer components {
+	.banner {
+		aspect-ratio: 100 / 42;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		&-text {
+			display: flex;
+			font-weight: bold;
+			font-size: f.rem(48);
+			line-height: f.rem(60);
+			color: var(--white);
+			text-align: center;
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background-color: color-mix(in srgb, var(--black) 70%, transparent);
+			}
+			& > * {
+				margin: auto;
+				max-width: 75%;
+				z-index: 1;
+			}
+		}
+	}
+}

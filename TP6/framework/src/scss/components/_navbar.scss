@@ -1,0 +1,36 @@
+@use "../partials/mixins" as m;
+@use "../partials/functions" as f;
+
+@layer components {
+	.navbar {
+		background-color: color-mix(in srgb, var(--black) 20%, transparent);
+		padding: f.rem(10) 0;
+		a {
+			@include m.resetA;
+		}
+
+		ul {
+			@include m.resetList;
+			@include m.flexbox($align: center, $gap: f.rem(18));
+			flex-grow: 1;
+		}
+
+		form {
+			display: none;
+			@media (width > f.screen("lg")) {
+				@include m.flexbox($gap: f.rem(10));
+			}
+		}
+
+		.container {
+			@include m.flexbox($align: center, $gap: f.rem(60));
+		}
+
+		.toggle {
+			@include m.resetButton;
+			width: 1.5rem;
+			height: 1.5rem;
+			background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M3.8,6.7h16.5 M3.8,12h16.5 M3.8,17.2h16.5"/></svg>');
+		}
+	}
+}
